@@ -15,6 +15,19 @@ Copy `target\weather65.d81` to the SD card and mount it; `AUTOBOOT.C65` starts t
 network with DHCP. On first start, type a city name or ZIP code and pick from the list. The choice is saved
 to the disk as `WXCONFIG`, so **the D81 must be writable**.
 
+## Bundled tools
+
+The repo root includes two Windows command-line tools that `build.bat` runs:
+
+| Tool | Used for | Project | Source |
+|---|---|---|---|
+| `64tass.exe` (v1.60.3243) | Assembler | [64tass](https://tass64.sourceforge.net/) | [SourceForge](https://sourceforge.net/projects/tass64/) |
+| `c1541.exe` (VICE 3.9) | Writes the D81 | [VICE](https://vice-emu.sourceforge.io/) | [GitHub mirror](https://github.com/VICE-Team/svn-mirror) |
+
+These are separate projects by their own authors, distributed under the GNU GPL, and included
+unmodified so that the project builds without installing anything else. Their licences apply to them,
+not to this project.
+
 ## Controls
 
 | Key | Action |
